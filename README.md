@@ -80,10 +80,10 @@
 
 ```bash
 # Antigravity 全局安装
-git clone https://github.com/TWKA1/meta-knowledge-prompt-translator.git ~/.gemini/config/skills/meta-knowledge-prompt-translator
+git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.gemini/config/skills/plain-to-meta
 
 # Claude Code 全局安装
-git clone https://github.com/TWKA1/meta-knowledge-prompt-translator.git ~/.claude/skills/meta-knowledge-prompt-translator
+git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.claude/skills/plain-to-meta
 ```
 
 ### 方式 2：Cursor / Windsurf 用户

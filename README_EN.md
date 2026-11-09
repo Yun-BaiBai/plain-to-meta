@@ -49,10 +49,10 @@ A single domain-specific term (**Meta-Knowledge Key**) encapsulates decades of b
 
 ```bash
 # Antigravity Global Skill
-git clone https://github.com/TWKA1/meta-knowledge-prompt-translator.git ~/.gemini/config/skills/meta-knowledge-prompt-translator
+git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.gemini/config/skills/plain-to-meta
 
 # Claude Code Global Skill
-git clone https://github.com/TWKA1/meta-knowledge-prompt-translator.git ~/.claude/skills/meta-knowledge-prompt-translator
+git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.claude/skills/plain-to-meta
 ```
 
 ### 2. Cursor / Windsurf
