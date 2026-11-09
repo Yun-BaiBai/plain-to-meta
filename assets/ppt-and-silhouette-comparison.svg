@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="480" rx="18" fill="url(#bg2)"/>
+  <rect x="1" y="1" width="1198" height="478" rx="17" fill="none" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Panel 1: PPT Pyramid Principle -->
+  <g transform="translate(35, 30)">
+    <rect width="550" height="420" rx="14" fill="#111827" stroke="#4F46E5" stroke-width="1.5" stroke-opacity="0.7"/>
+    <text x="275" y="36" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="17" font-weight="800">
+      📊 真实对比 02：商业汇报 PPT —— 【金字塔原理 (Pyramid Principle)】
+    </text>
+
+    <!-- Before PPT -->
+    <g transform="translate(24, 58)" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+      <rect width="502" height="145" rx="10" fill="#1F1218" stroke="#EF4444" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="16" y="26" fill="#FCA5A5" font-size="13" font-weight="700">❌ Before：自然表达派（记流水账，第 10 页才慢吞吞给结论）</text>
+
+      <!-- 9 gray slides + 1 red slide at the end -->
+      <g transform="translate(16, 42)" font-size="10" fill="#9CA3AF">
+        <rect x="0" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="21" y="25" text-anchor="middle">P1</text><text x="21" y="40" text-anchor="middle">背景</text>
+        <rect x="47" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="68" y="25" text-anchor="middle">P2</text><text x="68" y="40" text-anchor="middle">现状</text>
+        <rect x="94" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="115" y="25" text-anchor="middle">P3</text><text x="115" y="40" text-anchor="middle">过程A</text>
+        <rect x="141" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="162" y="25" text-anchor="middle">P4</text><text x="162" y="40" text-anchor="middle">过程B</text>
+        <rect x="188" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="209" y="25" text-anchor="middle">P5</text><text x="209" y="40" text-anchor="middle">细节</text>
+        <rect x="235" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="256" y="25" text-anchor="middle">P6</text><text x="256" y="40" text-anchor="middle">图表</text>
+        <rect x="282" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="303" y="25" text-anchor="middle">P7</text><text x="303" y="40" text-anchor="middle">困难</text>
+        <rect x="329" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="350" y="25" text-anchor="middle">P8</text><text x="350" y="40" text-anchor="middle">分析</text>
+        <rect x="376" y="0" width="42" height="54" rx="4" fill="#27272A"/><text x="397" y="25" text-anchor="middle">P9</text><text x="397" y="40" text-anchor="middle">展望</text>
+        <rect x="423" y="0" width="47" height="54" rx="4" fill="#7F1D1D" stroke="#EF4444"/><text x="446" y="25" text-anchor="middle" fill="#FCA5A5" font-weight="700">P10</text><text x="446" y="40" text-anchor="middle" fill="#FCA5A5">结论!</text>
+      </g>
+      <text x="16" y="124" fill="#F87171" font-size="11.5">⚠️ 领导听到第 3 页就打断：“你到底想说什么？核心结论是什么？”</text>
+    </g>
+
+    <!-- After PPT (Pyramid) -->
+    <g transform="translate(24, 220)" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+      <rect width="502" height="176" rx="10" fill="#0D2322" stroke="#10B981" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#6EE7B7" font-size="13" font-weight="700">✅ After：注入【金字塔原理 + SCQA + MECE】（结论先行，以上统下）</text>
+
+      <!-- Top Apex: Conclusion First -->
+      <rect x="135" y="40" width="232" height="36" rx="6" fill="#10B981"/>
+      <text x="251" y="63" text-anchor="middle" fill="#052E16" font-size="12" font-weight="800">👑 P1-P2 核心结论先行 (SCQA 亮底牌)</text>
+
+      <!-- Connector lines -->
+      <line x1="251" y1="76" x2="95" y2="100" stroke="#34D399" stroke-width="2"/>
+      <line x1="251" y1="76" x2="251" y2="100" stroke="#34D399" stroke-width="2"/>
+      <line x1="251" y1="76" x2="407" y2="100" stroke="#34D399" stroke-width="2"/>
+
+      <!-- 3 MECE Pillars -->
+      <rect x="25" y="100" width="140" height="44" rx="6" fill="#1E293B" stroke="#10B981"/>
+      <text x="95" y="119" text-anchor="middle" fill="#A7F3D0" font-size="11" font-weight="700">论据组 A (MECE)</text>
+      <text x="95" y="135" text-anchor="middle" fill="#94A3B8" font-size="10">观点型标题 + 数据</text>
+
+      <rect x="181" y="100" width="140" height="44" rx="6" fill="#1E293B" stroke="#10B981"/>
+      <text x="251" y="119" text-anchor="middle" fill="#A7F3D0" font-size="11" font-weight="700">论据组 B (MECE)</text>
+      <text x="251" y="135" text-anchor="middle" fill="#94A3B8" font-size="10">相互独立 · 完全穷尽</text>
+
+      <rect x="337" y="100" width="140" height="44" rx="6" fill="#1E293B" stroke="#10B981"/>
+      <text x="407" y="119" text-anchor="middle" fill="#A7F3D0" font-size="11" font-weight="700">论据组 C (MECE)</text>
+      <text x="407" y="135" text-anchor="middle" fill="#94A3B8" font-size="10">逻辑递进与 ROI 闭环</text>
+
+      <text x="16" y="164" fill="#6EE7B7" font-size="11.5">🎯 开篇 30 秒直接锁定高管注意力，层层排证达到麦肯锡商业路演标准</text>
+    </g>
+  </g>
+
+  <!-- Panel 2: Character Design Silhouette Rule -->
+  <g transform="translate(615, 30)">
+    <rect width="550" height="420" rx="14" fill="#111827" stroke="#F59E0B" stroke-width="1.5" stroke-opacity="0.7"/>
+    <text x="275" y="36" text-anchor="middle" fill="#F8FAFC" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="17" font-weight="800">
+      🎨 真实对比 03：多角色绘画 —— 【剪影原则 (Silhouette Rule) &amp; 形状语言】
+    </text>
+
+    <!-- Before Silhouette -->
+    <g transform="translate(24, 58)" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+      <rect width="502" height="145" rx="10" fill="#1F1218" stroke="#EF4444" stroke-width="1" stroke-opacity="0.5"/>
+      <text x="16" y="26" fill="#FCA5A5" font-size="13" font-weight="700">❌ Before：自然表达派（4 个角色同质化网红脸、体型一模一样）</text>
+
+      <!-- 4 identical silhouettes -->
+      <g transform="translate(75, 42)" fill="#52525B">
+        <circle cx="30" cy="14" r="11"/><rect x="16" y="28" width="28" height="42" rx="6"/>
+        <circle cx="130" cy="14" r="11"/><rect x="116" y="28" width="28" height="42" rx="6"/>
+        <circle cx="230" cy="14" r="11"/><rect x="216" y="28" width="28" height="42" rx="6"/>
+        <circle cx="330" cy="14" r="11"/><rect x="316" y="28" width="28" height="42" rx="6"/>
+      </g>
+      <text x="16" y="128" fill="#F87171" font-size="11.5">⚠️ 涂黑成剪影后完全是复制粘贴，只能靠衣服涂红/涂蓝勉强区分</text>
+    </g>
+
+    <!-- After Silhouette -->
+    <g transform="translate(24, 220)" font-family="system-ui, 'Microsoft YaHei', sans-serif">
+      <rect width="502" height="176" rx="10" fill="#0D2322" stroke="#10B981" stroke-width="1.5"/>
+      <text x="16" y="26" fill="#6EE7B7" font-size="13" font-weight="700">✅ After：注入【剪影原则 + 形状语言（圆/方/三角）】+【破型标志物】</text>
+
+      <!-- 4 Distinct Shape Language Silhouettes -->
+      <g transform="translate(45, 42)">
+        <!-- 1. Square/Trapezoid Tank -->
+        <circle cx="42" cy="14" r="9" fill="#F59E0B"/>
+        <polygon points="10,26 74,26 62,82 22,82" fill="#F59E0B"/>
+        <rect x="72" y="12" width="12" height="68" rx="3" fill="#FBBF24"/>
+        <text x="45" y="98" text-anchor="middle" fill="#FDE68A" font-size="10.5" font-weight="700">方形·重装铁匠</text>
+
+        <!-- 2. Tall Sharp Triangle Ranger -->
+        <circle cx="155" cy="10" r="8" fill="#38BDF8"/>
+        <polygon points="155,20 128,82 182,82" fill="#38BDF8"/>
+        <path d="M 172 15 Q 205 35 178 75" fill="none" stroke="#7DD3FC" stroke-width="4"/>
+        <text x="155" y="98" text-anchor="middle" fill="#BAE6FD" font-size="10.5" font-weight="700">三角形·高挑游侠</text>
+
+        <!-- 3. Round Compact Alchemist -->
+        <circle cx="270" cy="30" r="12" fill="#34D399"/>
+        <circle cx="270" cy="60" r="24" fill="#34D399"/>
+        <circle cx="298" cy="48" r="10" fill="#6EE7B7"/>
+        <text x="270" y="98" text-anchor="middle" fill="#A7F3D0" font-size="10.5" font-weight="700">圆形·敦实炼金师</text>
+
+        <!-- 4. Asymmetric Silhouette-Breaking Mage -->
+        <polygon points="380,6 368,24 392,24" fill="#C084FC"/>
+        <polygon points="372,26 388,26 396,82 364,82" fill="#C084FC"/>
+        <circle cx="380" cy="44" r="32" fill="none" stroke="#E879F9" stroke-width="3" stroke-dasharray="6 3"/>
+        <text x="380" y="98" text-anchor="middle" fill="#E9D5FF" font-size="10.5" font-weight="700">破型环·神秘法师</text>
+      </g>
+
+      <text x="16" y="164" fill="#6EE7B7" font-size="11.5">🎯 即使涂成纯黑剪影也能 0.5 秒一眼认出每位角色，瞬间具备皮克斯级造型张力</text>
+    </g>
+  </g>
+</svg>

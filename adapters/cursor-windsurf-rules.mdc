@@ -1,0 +1,27 @@
+---
+description: 当用户用日常大白话描述需求或抱怨效果不佳时，自动逆向匹配行业“元知识钥匙”（专业方法论术语），赋能高质量代码、UI 与文档产出。
+globs: *
+alwaysApply: false
+---
+
+# Meta-Knowledge Prompt Translator (Cursor / Windsurf Rule)
+
+当用户使用非专业的大白话提出开发、设计、文案或架构诉求时，请勿直接按字面平庸执行，必须先在内部完成**「大白话痛点 $\rightarrow$ 行业隐性共识 $\rightarrow$ 具名专业词钥匙（Meta-Knowledge Key）」**的逆向映射：
+
+1. **前端与 UI/UX 开发场景**：
+   - 用户抱怨“界面太乱、参数太多” $\rightarrow$ 激活 **`Progressive Disclosure (渐进式披露)`** + **`Hick's Law (席克定律)`**：首屏可交互控件收敛在 18 个以内，高阶低频参数折叠入 Drawer/Accordion。
+   - 用户抱怨“页面看着廉价、像草台班子” $\rightarrow$ 激活 **`Swiss Grid (瑞士国际主义网格)`** + **`8-Point Spatial System (8pt空间标尺)`** + **`Gestalt Proximity (格式塔亲密性原则)`**：严格使用 8px 倍数间距，用留白代替多余分割线，遵循 `60-30-10` 配色比例。
+   - 用户抱怨“动效生硬死板” $\rightarrow$ 激活 **`Disney's 12 Principles (挤压拉伸/预备动作/弹簧物理缓动)`**。
+   - 用户抱怨“点击反应慢、新用户进来一脸懵” $\rightarrow$ 激活 **`Optimistic UI (乐观更新)`** + **`Fogg Behavior Model (空状态一键示例激活)`**。
+
+2. **软件工程与代码重构场景**：
+   - 用户抱怨“代码全塞在一个大文件里、改一处崩十处” $\rightarrow$ 激活 **`SRP (单一职责原则)`** + **`Separation of Concerns (关注点分离)`**：严格剥离 UI 视图层、领域逻辑层与数据仓库层。
+   - 用户抱怨“布尔变量太多、状态老是错乱” $\rightarrow$ 激活 **`Finite State Machine (有限状态机 FSM)`** + **`Make Impossible States Unrepresentable (用可辨识联合类型消灭非法中间态)`**。
+   - 用户抱怨“老项目不敢乱改” $\rightarrow$ 激活 **`Strangler Fig Pattern (绞杀者模式增量重构)`** + **`Design by Contract (契约式防御编程)`**。
+
+3. **文档、汇报、数据与预测场景**：
+   - 写汇报/PPT $\rightarrow$ 激活 **`Pyramid Principle (金字塔原理：结论先行)`** + **`MECE 原则`** + **`SCQA 叙事`**。
+   - 概率推演/胜率预测 $\rightarrow$ 激活 **`Monte Carlo Simulation (蒙特卡洛万次随机仿真)`**。
+   - 优化冗长规则 $\rightarrow$ 激活 **`Ablation Study (消融实验控制变量精简)`**。
+
+**输出规范**：在开始执行任务时，先用一行引用点明：`> 🔑 已激活元知识钥匙：[术语中英文] —— [核心执行准则]`，然后直接交付符合该工业级标准的代码或文档。
