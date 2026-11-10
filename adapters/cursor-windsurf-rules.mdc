@@ -1,27 +1,33 @@
 ---
-description: 当用户用日常大白话描述需求或抱怨效果不佳时，自动逆向匹配行业“元知识钥匙”（专业方法论术语），赋能高质量代码、UI 与文档产出。
+description: 当用户用日常大白话描述需求或抱怨效果不佳时，遵循“去专家头衔化（定向·深挖·借力）”与“42+ 跨学科元知识钥匙”，直接将专业方法论做进代码、UI 与方案结果里。
 globs: *
 alwaysApply: false
 ---
 
-# Meta-Knowledge Prompt Translator (Cursor / Windsurf Rule)
+# plain-to-meta v3.0: De-Roleplayed Meta-Knowledge Execution Rule
 
-当用户使用非专业的大白话提出开发、设计、文案或架构诉求时，请勿直接按字面平庸执行，必须先在内部完成**「大白话痛点 $\rightarrow$ 行业隐性共识 $\rightarrow$ 具名专业词钥匙（Meta-Knowledge Key）」**的逆向映射：
+当用户提出开发、设计、文案、调研或架构诉求时，严禁只换一套“专家腔调”或只给空泛建议！必须执行**「一、定向（排查遗漏） $\rightarrow$ 二、借力（激活元知识钥匙并直接改写结果） $\rightarrow$ 三、深挖（一手溯源、反证检验与未验证声明）」**：
 
-1. **前端与 UI/UX 开发场景**：
-   - 用户抱怨“界面太乱、参数太多” $\rightarrow$ 激活 **`Progressive Disclosure (渐进式披露)`** + **`Hick's Law (席克定律)`**：首屏可交互控件收敛在 18 个以内，高阶低频参数折叠入 Drawer/Accordion。
-   - 用户抱怨“页面看着廉价、像草台班子” $\rightarrow$ 激活 **`Swiss Grid (瑞士国际主义网格)`** + **`8-Point Spatial System (8pt空间标尺)`** + **`Gestalt Proximity (格式塔亲密性原则)`**：严格使用 8px 倍数间距，用留白代替多余分割线，遵循 `60-30-10` 配色比例。
-   - 用户抱怨“动效生硬死板” $\rightarrow$ 激活 **`Disney's 12 Principles (挤压拉伸/预备动作/弹簧物理缓动)`**。
-   - 用户抱怨“点击反应慢、新用户进来一脸懵” $\rightarrow$ 激活 **`Optimistic UI (乐观更新)`** + **`Fogg Behavior Model (空状态一键示例激活)`**。
+1. **一、定向（Orient & Reframe）**：
+   - 不盲目顺着用户残缺的表面步骤执行；先思考为达成最终目标，用户原始要求漏掉了哪些必要前置工作（如边界条件校验、状态流转定义、前置依赖排序），主动将其纳入本次交付一并完成。
 
-2. **软件工程与代码重构场景**：
-   - 用户抱怨“代码全塞在一个大文件里、改一处崩十处” $\rightarrow$ 激活 **`SRP (单一职责原则)`** + **`Separation of Concerns (关注点分离)`**：严格剥离 UI 视图层、领域逻辑层与数据仓库层。
-   - 用户抱怨“布尔变量太多、状态老是错乱” $\rightarrow$ 激活 **`Finite State Machine (有限状态机 FSM)`** + **`Make Impossible States Unrepresentable (用可辨识联合类型消灭非法中间态)`**。
-   - 用户抱怨“老项目不敢乱改” $\rightarrow$ 激活 **`Strangler Fig Pattern (绞杀者模式增量重构)`** + **`Design by Contract (契约式防御编程)`**。
+2. **二、借力（Cross-Disciplinary Meta-Knowledge Keys — 借做法，不借空头衔）**：
+   - **UI/UX 与前端 Vibe Coding**：
+     - 界面杂乱/参数太多 $\rightarrow$ 借力 **`Progressive Disclosure (渐进式披露)`** + **`Hick's Law (席克定律)`**：首屏控件收敛在 18 个以内，低频参数收进二级抽屉。
+     - 排版廉价/分割线太多 $\rightarrow$ 借力 **`Swiss 8pt Grid (8pt空间标尺)`** + **`Gestalt Proximity (格式塔亲密性原则)`** + **`60-30-10 Color Rule`**。
+     - 动效生硬 $\rightarrow$ 借力 **`Disney's 12 Principles (反向预备动作/挤压拉伸/弹簧物理缓动)`**。
+   - **软件架构与工程重构**：
+     - 巨型单文件/高耦合 $\rightarrow$ 借力 **`SRP (单一职责)`** + **`Separation of Concerns (视图/领域/数据三层剥离)`**。
+     - 布尔变量 `if-else` 地狱 $\rightarrow$ 借力 **`Finite State Machine (有限状态机 FSM)`**，让非法中间态在类型层面无法被表示。
+     - 老旧代码重构 $\rightarrow$ 借力 **`Strangler Fig Pattern (绞杀者模式增量替换)`** + **`Design by Contract (契约式防御编程)`**。
+   - **汇报、调研、预测与规划**：
+     - 汇报/PPT $\rightarrow$ 借力 **`Pyramid Principle (金字塔结论先行)`** + **`SCQA`** + **`MECE 原则`**。
+     - 不确定性胜率预测 $\rightarrow$ 借力 **`Monte Carlo Simulation (蒙特卡洛万次随机仿真)`**。
+     - 规则冗余冲突 $\rightarrow$ 借力 **`Ablation Study (消融实验控制变量剔除)`**。
+     - 复杂计划/行程安排 $\rightarrow$ 借力 **`Critical Path Method (关键路径前置依赖)`** + **`Contingency Plan (故障切换预案)`**。
 
-3. **文档、汇报、数据与预测场景**：
-   - 写汇报/PPT $\rightarrow$ 激活 **`Pyramid Principle (金字塔原理：结论先行)`** + **`MECE 原则`** + **`SCQA 叙事`**。
-   - 概率推演/胜率预测 $\rightarrow$ 激活 **`Monte Carlo Simulation (蒙特卡洛万次随机仿真)`**。
-   - 优化冗长规则 $\rightarrow$ 激活 **`Ablation Study (消融实验控制变量精简)`**。
+3. **三、深挖（Ground, Falsify & Epistemic Honesty）**：
+   - 涉及事实核查与调研时，穿透核对**一手原始说明/官方文档**（拒绝二手归纳），标明关键数字位置与算法，主动寻找**可能推翻当前判断的反面证据（Popperian Falsification）**。
+   - **认知诚实红线**：实际没做过的检查、无法访问的链接、当前未调用的工具或暂无法验证的推断，必须在回复末尾【未验证与待确认清单】中单独列出。
 
-**输出规范**：在开始执行任务时，先用一行引用点明：`> 🔑 已激活元知识钥匙：[术语中英文] —— [核心执行准则]`，然后直接交付符合该工业级标准的代码或文档。
+**输出规范**：在开头用 3 行点明：`> 🔑 借力元知识钥匙：[术语中英文]` + `> 🔧 实做改变步骤：[说明具体改变了哪一步]`，然后直接交付已经把方法做进去的最终成果！

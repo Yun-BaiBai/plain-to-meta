@@ -1,13 +1,13 @@
-# 🔑 plain-to-meta (Meta-Knowledge Prompt Translator v2.0)
+# 🔑 plain-to-meta (Meta-Knowledge & De-Roleplayed Execution Engine v3.0)
 
-> **Stop using vague colloquial prompts.** Translate everyday plain-language pain points into high-density **Domain Terms & Meta-Knowledge Keys** (`Ablation Study`, `Progressive Disclosure`, `Monte Carlo Simulation`, `Pyramid Principle`, `Silhouette Rule`, etc.) and compile them via **Tri-Track Architecture (System / User / Visual)** to unlock expert-level AI outputs.
+> **Stop using vague colloquial prompts—and stop telling AI "You are an expert in X".** `plain-to-meta` translates everyday pain points into **42+ high-density Meta-Knowledge Keys** and enforces the **Orient $\rightarrow$ Borrow $\rightarrow$ Ground & Falsify** execution workflow so AI actually changes how it works, not just how it talks.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Agent Skills Standard](https://img.shields.io/badge/Standard-Agent%20Skills-blue.svg)](./SKILL.md)
-[![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-39%2B%20Verified-brightgreen.svg)](./references/)
-[![Version](https://img.shields.io/badge/Version-v2.0%20Tri--Track-purple.svg)](./SKILL.md)
+[![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-42%2B%20Verified-brightgreen.svg)](./references/)
+[![Version](https://img.shields.io/badge/Version-v3.0%20Orient--Borrow--Ground-purple.svg)](./SKILL.md)
 
-[简体中文文档](./README.md) | [Before vs. After Showcase](./examples/before-after-showcase.md) | [Contributing Guide](./CONTRIBUTING.md)
+[简体中文文档](./README.md) | [Before vs. After Showcase (7 Cases)](./examples/before-after-showcase.md) | [Contributing Guide](./CONTRIBUTING.md)
 
 <p align="center">
   <img src="./assets/hero-banner.svg" alt="Meta-Knowledge Prompt Translator Architecture Banner" width="100%" />
@@ -19,21 +19,15 @@
 
 ---
 
-## 💡 Why Plain Language ("Natural Expression") Fails in Production
+## 💡 The Twin Laws of `plain-to-meta` v3.0
 
-Most users struggle to get production-grade output from AI not because the model lacks capability, but because **plain, conversational language fails to activate the model's latent expert consensus**:
-
-* **Colloquial Prompt**: *"Build me a video generation dashboard web app with all settings."* $\rightarrow$ AI dumps **58 buttons and inputs onto a single cluttered screen**.
-* **With Meta-Knowledge Key**: Injecting **`Progressive Disclosure`** + **`Hick's Law`** $\rightarrow$ AI immediately limits the primary screen to **16 core controls** (reducing visual clutter by 69%) and tucks advanced parameters into on-demand drawers.
-
----
-
-## 🚀 What's New in v2.0 (Inspired by Prompt Optimizer & LangGPT)
-
-1. **Tri-Track Compilation (`System` / `User` / `Visual`)**: Automatically routes between reusable LangGPT System Personas, concise one-shot User Instructions, and 5-Layer Visual/Video Director Prompts (for Midjourney, Flux, Sora, Kling).
-2. **Evidence Isolation & `{{Variable}}` Assetization**: Prevents meta-instruction confusion via `<prompt_evidence>` sandboxing, preserves `{{variable_name}}` placeholders with 100% fidelity, and extracts reusable parameter slots.
-3. **6D Diagnostic Scorecard & Surgical Delta Iteration**: Scores prompts across 6 orthogonal dimensions (including *Meta-Knowledge Density*) and applies surgical patches during multi-round iteration without breaking previously validated rules.
-4. **6 Domain Volumes with 39+ Verified Keys**: Covering UI/UX (`01`), Visual/Animation (`02`), Business/Copywriting (`03`), Data/Probability (`04`), Software/Level Design (`05`), and Prompt Engineering/Evaluation (`06`).
+1. **Law 1: Break the "Plain Language" Myth (Activate Meta-Knowledge Keys)**
+   - Plain language fails to trigger the LLM's latent expert consensus. Injecting a named domain methodology (`Progressive Disclosure`, `Monte Carlo Simulation`, `Ablation Study`, `Pyramid Principle`, `Silhouette Rule`) unlocks decades of battle-tested engineering frameworks in a single token cluster.
+2. **Law 2: Break the "You Are an Expert" Myth (Orient $\rightarrow$ Borrow $\rightarrow$ Ground)**
+   - Telling AI *"You are a world-class expert"* often just triggers **Tone Cosplay**—the AI uses fancier buzzwords while keeping the exact same lazy workflow. Instead, v3.0 enforces three concrete operational steps:
+     - **🧭 1. Orient (Reframe & Find Missing Work)**: State the ultimate decision goal and hard constraints; ask the AI to identify omitted prerequisite steps and reorganize the workflow before executing.
+     - **🔑 2. Borrow (Cross-Disciplinary Action Injection)**: Borrow actionable methods from adjacent fields (e.g., applying Project Management's *Critical Path Method* and Risk Engineering's *Contingency Switching* to travel planning) and **bake the changes directly into the deliverable**—no hollow advice or multiple "expert hats".
+     - **🔍 3. Ground & Falsify (Primary Sources & Epistemic Honesty)**: Demand primary source citations and calculation formulas, actively search for **disconfirming evidence (Popperian Falsification)**, and isolate any **unchecked links, unverified claims, or tool limitations** in a dedicated audit section.
 
 ---
 
@@ -59,7 +53,7 @@ Copy the system prompt from [`adapters/standalone-system-prompt.md`](./adapters/
 
 ### 4. Prompt Optimizer (`linshenkx/prompt-optimizer`) Custom Template
 
-Import [`adapters/prompt-optimizer-template.json`](./adapters/prompt-optimizer-template.json) into Prompt Optimizer to supercharge it with `plain-to-meta`'s 39+ domain keys.
+Import [`adapters/prompt-optimizer-template.json`](./adapters/prompt-optimizer-template.json) into Prompt Optimizer to equip it with our v3.0 engine.
 
 ---
 
