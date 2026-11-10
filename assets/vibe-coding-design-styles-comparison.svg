@@ -33,11 +33,11 @@
   <rect x="1" y="1" width="1198" height="618" rx="17" fill="none" stroke="#1E293B" stroke-width="1.5"/>
 
   <!-- Main Header -->
-  <g transform="translate(600, 38)">
-    <text text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, 'Microsoft YaHei', sans-serif" font-size="22" font-weight="800" letter-spacing="0.5">
-      🎨 真实视觉对比 02：Vibe Coding 美学跃迁 —— 告别“无脑紫蓝渐变”，1 秒激活 30+ 顶尖设计流派
+  <g transform="translate(600, 36)">
+    <text text-anchor="middle" fill="#F8FAFC" font-family="system-ui, -apple-system, 'Microsoft YaHei', sans-serif" font-size="21" font-weight="800" letter-spacing="0.5">
+      🎨 真实视觉对比 01：Vibe Coding 美学跃迁 —— 告别“无脑紫蓝渐变”，1 秒激活 30+ 顶尖设计流派
     </text>
-    <text y="26" text-anchor="middle" fill="#94A3B8" font-family="system-ui, -apple-system, 'Microsoft YaHei', sans-serif" font-size="13.5">
+    <text y="25" text-anchor="middle" fill="#94A3B8" font-family="system-ui, -apple-system, 'Microsoft YaHei', sans-serif" font-size="13">
       大白话需求：“帮我用 Cursor / v0 写一个 AI 生产力工具主页，看起来要高级、炫酷、有科技感！”
     </text>
   </g>
@@ -63,7 +63,7 @@
 
       <!-- Generic Nav -->
       <text x="20" y="30" fill="#E9D5FF" font-family="system-ui, sans-serif" font-size="14" font-weight="800">AICo.ai</text>
-      <text x="240" y="28" fill="#C084FC" font-family="system-ui, sans-serif" font-size="11">Features   Pricing   Blog   About</text>
+      <text x="230" y="28" fill="#C084FC" font-family="system-ui, sans-serif" font-size="11">Features   Pricing   Blog   About</text>
       <rect x="405" y="14" width="70" height="22" rx="11" fill="url(#genericBtn)"/>
       <text x="440" y="29" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="10" font-weight="700">Sign Up</text>
 
@@ -141,16 +141,20 @@
       ✅ After：注入专业设计风格钥匙（1 秒切换世界级工业美学）
     </text>
 
-    <!-- Slice 1: Bento Grid Style (Top Half) -->
+    <!-- Slice 1: Bento Grid Style (Top) -->
     <g transform="translate(18, 48)">
       <rect width="539" height="142" rx="10" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-      <rect x="12" y="8" width="130" height="20" rx="4" fill="#1E293B"/>
-      <text x="18" y="22" fill="#38BDF8" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800">
-        🍱 钥匙 01 · Bento Grid 便当格
-      </text>
-      <text x="150" y="22" fill="#94A3B8" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10.5">
-        Apple / Linear 级 4 轨非对称栅格 · 1px 微发丝边框 · 呼吸感留白
-      </text>
+      
+      <!-- Top Title Bar (Left badge + Right aligned subtitle, ZERO OVERLAP) -->
+      <g transform="translate(12, 8)">
+        <rect width="138" height="20" rx="4" fill="#1E293B" stroke="#38BDF8" stroke-width="0.8"/>
+        <text x="10" y="14" fill="#38BDF8" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10.5" font-weight="800">
+          🍱 Bento Grid 便当格
+        </text>
+        <text x="515" y="14" text-anchor="end" fill="#94A3B8" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10">
+          Apple 级 4 轨非对称栅格 · 1px 微发丝边框 · 留白秩序
+        </text>
+      </g>
 
       <!-- Bento Cards Grid -->
       <g transform="translate(12, 34)">
@@ -181,13 +185,17 @@
     <!-- Slice 2: Neo-Brutalism Style (Middle) -->
     <g transform="translate(18, 200)">
       <rect width="539" height="136" rx="10" fill="#FEFCE8" stroke="#18181B" stroke-width="2"/>
-      <rect x="12" y="8" width="165" height="22" rx="4" fill="#FACC15" stroke="#000000" stroke-width="1.5"/>
-      <text x="18" y="23" fill="#000000" font-family="system-ui, sans-serif" font-size="10.5" font-weight="800">
-        💥 钥匙 02 · Neo-Brutalism 新粗野
-      </text>
-      <text x="185" y="23" fill="#000000" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10.5" font-weight="600">
-        纯黑 2px 硬框 · 4px 实体黑投影 · 高饱和撞色 · 独立开发者硬核感
-      </text>
+      
+      <!-- Top Title Bar (Left badge + Right aligned subtitle, ZERO OVERLAP) -->
+      <g transform="translate(12, 8)">
+        <rect width="148" height="20" rx="3" fill="#FACC15" stroke="#000000" stroke-width="1.5"/>
+        <text x="8" y="14" fill="#000000" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10.5" font-weight="800">
+          💥 Neo-Brutalism 新粗野
+        </text>
+        <text x="515" y="14" text-anchor="end" fill="#000000" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10" font-weight="600">
+          纯黑 2px 硬框 · 4px 实体黑投影 · 波普撞色 · 独立开发者态度
+        </text>
+      </g>
 
       <g transform="translate(12, 38)">
         <!-- Brutalist Card 1 -->
@@ -212,13 +220,17 @@
     <!-- Slice 3: Terminal Aesthetic Style (Bottom) -->
     <g transform="translate(18, 346)">
       <rect width="539" height="142" rx="10" fill="#050811" stroke="#1E293B" stroke-width="1.2"/>
-      <rect x="12" y="8" width="170" height="20" rx="4" fill="#0D1F18"/>
-      <text x="18" y="22" fill="#34D399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">
-        💻 钥匙 03 · Terminal 极客终端
-      </text>
-      <text x="190" y="22" fill="#64748B" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10.5">
-        纯黑底 #0B0F17 · Fira Code 等宽排印 · 荧光命令提示 · 极客信赖感
-      </text>
+      
+      <!-- Top Title Bar (Left badge + Right aligned subtitle, ZERO OVERLAP) -->
+      <g transform="translate(12, 8)">
+        <rect width="144" height="20" rx="3" fill="#0D1F18" stroke="#10B981" stroke-width="0.8"/>
+        <text x="8" y="14" fill="#34D399" font-family="ui-monospace, monospace" font-size="10.5" font-weight="700">
+          💻 Terminal 极客终端
+        </text>
+        <text x="515" y="14" text-anchor="end" fill="#64748B" font-family="system-ui, 'Microsoft YaHei', sans-serif" font-size="10">
+          纯黑底 #0B0F17 · Fira Code 等宽排印 · 荧光命令提示 · 极客信赖感
+        </text>
+      </g>
 
       <g transform="translate(16, 36)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10">
         <text x="0" y="14" fill="#10B981">~/agy/plain-to-meta ❯</text>
