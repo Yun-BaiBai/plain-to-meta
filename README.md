@@ -1,10 +1,11 @@
-# 🔑 Meta-Knowledge Prompt Translator（元知识与专业词提示词破译器）
+# 🔑 plain-to-meta（元知识与专业词提示词破译器 v2.0）
 
-> **破除“自然表达派”迷思：当你没有相关领域知识、只会说大白话时，帮你在 1 秒内逆向匹配行业隐性共识与高密度“专业词钥匙”，将平庸输出转化为大师级交付。**
+> **破除“自然表达派”迷思：当你没有相关领域知识、只会说大白话时，帮你在 1 秒内逆向匹配行业隐性共识与高密度“专业词钥匙”，并按三轨架构（System / User / Visual）编译为大师级提示词。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Agent Skills Standard](https://img.shields.io/badge/Standard-Agent%20Skills-blue.svg)](./SKILL.md)
-[![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-34%2B%20Verified-brightgreen.svg)](./references/)
+[![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-39%2B%20Verified-brightgreen.svg)](./references/)
+[![Version](https://img.shields.io/badge/Version-v2.0%20Tri--Track-purple.svg)](./SKILL.md)
 
 [English README](./README_EN.md) | [残酷对比案例集 (Before vs. After)](./examples/before-after-showcase.md) | [贡献你的行业钥匙](./CONTRIBUTING.md)
 
@@ -14,7 +15,7 @@
 
 ---
 
-## 💡 为什么你需要这个 Skill？（为什么“自然表达派”行不通？）
+## 💡 为什么你需要 `plain-to-meta`？（为什么“自然表达派”行不通？）
 
 很多人以为用 AI 只需要“用大白话把需求说明白”。但在真实的生产环境（写代码、做 UI、排视频分镜、写商业汇报、做概率预测）中，**大白话只会带来大量的低效沟通与平庸输出**：
 
@@ -24,7 +25,7 @@
 **这就是“专业词钥匙（元知识）”的威力**：
 每一个经过历史沉淀的行业专业词汇（如**消融实验、蒙特卡洛模拟、金字塔原理、F型视觉理论、迪士尼动画十二原则、角色剪影原则、渐进式披露**），都凝聚了一整套经过前人千百次验证的成熟方法论与行业隐性共识。在 AI 时代，你不需要亲手实现每个细节，但你必须拥有唤起大模型底层高维知识簇的“**钥匙**”。
 
-**本项目的使命**：当你身处陌生的跨学科领域、说不出那个关键的专业词时，由本 Skill 自动完成 **「大白话痛点逆向诊断 $\rightarrow$ 行业隐性共识对齐 $\rightarrow$ 专业词钥匙提取 $\rightarrow$ 生产级提示词补全/直接执行」**。
+**本项目的使命**：当你身处陌生的跨学科领域、说不出那个关键的专业词时，由本 Skill 自动完成 **「大白话痛点逆向诊断 $\rightarrow$ 行业隐性共识对齐 $\rightarrow$ 专业词钥匙提取 $\rightarrow$ 三轨生产级提示词编译/直接执行」**。
 
 ---
 
@@ -47,28 +48,35 @@
 | *“AI 生成的数码产品宣传片动效太僵硬，像老式 PPT 平移”* | 匀速直线位移（Linear），毫无重量感与机械质感 | **迪士尼动画十二原则 (`Disney's 12 Principles`)** | 注入**反向预备动作、挤压与拉伸、非线性弹簧缓动与空间弧线**，瞬间具备工业大片弹性 |
 | *“让 AI 画 4 个角色同框，结果全是网红脸，只靠衣服颜色区分”* | 身高、五官、体态高度趋同，遮住颜色分不清谁是谁 | **角色剪影原则 (`Silhouette Rule`) + `形状语言`** | **涂成纯黑剪影也能一眼认出**；拉开圆/方/三角几何体型反差与破型标志物 |
 | *“Vibe Coding 写出的工具把几十个参数全铺在首页，太难用”* | 首屏堆砌 58 个控件，新用户打开直接认知超载 | **渐进式披露 (`Progressive Disclosure`) + `席克定律`** | 首屏仅保留 80% 主干功能（**<18 个元素**），高阶低频参数折叠进二级抽屉按需触发 |
+| *“每次换个商品都要改半天提示词，或者多轮微调越改越乱”* | 把业务参数写死在正文里，微调时把原有好规则全删了 | **三轨分流 (`Tri-Track`) + 靶向补丁 (`Surgical Patch`)** | 自动区分 System/User/Visual 轨，抽离 `{{动态变量}}` 槽位，并用最小补丁代替破坏性重写 |
 
 👉 查看完整对比细节与 Prompt 原文：[examples/before-after-showcase.md](./examples/before-after-showcase.md)
 
 ---
 
-## ⚙️ 核心引擎架构（四大独创设计）
+## ⚙️ 核心引擎架构（v2.0 六大核心设计）
 
-1. **三模态自适应交互（3 Interactive Modes）**
-   * **⚡ 模式 A（静默赋能直接干活）**：当你让 Agent 写代码/写文档时，不废话科普，仅在顶部用 2 行点亮 `🔑 已激活元知识钥匙`，随后直接按工业级标准交付成品。
-   * **🚀 模式 B（提示词编译器模式）**：当你需要把 Prompt 复制到 Midjourney / Sora / 外部工具时，完整输出「痛点破译 + 钥匙解析 + 可一键复制的高密度 Prompt」。
-   * **🧭 模式 C（苏格拉底反问诊断）**：当大白话极度模糊（如“改得高级点”）时，主动提供 2~3 个不同流派的专业词钥匙选项供你拍板。
-2. **第一性原理“奠基人溯源检索法”（解决静态词表未覆盖领域）**
+1. **三轨目标分流架构（Tri-Track Target Routing，融合 Prompt Optimizer & LangGPT 精髓）**
+   * **Track 1 [System 长效人设轨]**：构建可复用的 Agent / GPTs / Skill，采用增强版 LangGPT 结构（含 `Role`、`Meta-Knowledge Keys`、`Goals`、`Constraints`、专注于角色内在思考方式的 `Suggestions` 与正反例对比）。
+   * **Track 2 [User 单次精准指令轨]**：剥离冗余的角色扮演寒暄，直接输出「上下文边界 + 元知识方法论硬约束 + 量化验收标准 + `{{动态变量}}`」。
+   * **Track 3 [Visual/Motion 视觉导演五层轨]**：针对 Midjourney / Flux / Sora / Kling / Seedream 等图像视频模型，摒弃 `# Role` 文本套话，直接编译为：`[主体与剪影形状语言] + [F型空间构图与景别] + [戏剧布光与60-30-10色调] + [迪士尼物理动态曲线/运镜] + [光学镜头参数与负向词 --no]`。
+2. **证据沙箱隔离与 `{{变量}}` 资产化保护（Evidence Isolation & Variable Assetization）**
+   * **防元指令越界**：将待优化文本视为静态 `<prompt_evidence>` 证据，杜绝 AI 把“不要交互/输出JSON/翻译这段话”错误当成对当前对话的指令去执行。
+   * **动态变量提取与零损保护**：100% 逐字保留原提示词中的 `{{variable_name}}` 占位符，并主动将高频可变业务参数抽离为可复用的动态插槽。
+3. **四模态交互 + 六维量化评分 + 靶向手术补丁（6D Scorecard & Surgical Patch Iteration）**
+   * 支持 **⚡ 静默干活模式**、**🚀 提示词编译器模式（附优化前后六维诊断评分：元知识密度/清晰度/完备度/可执行性/歧义控制/鲁棒性）**、**🔧 靶向手术迭代模式（只改局部补丁，不破坏已验证规则）** 与 **🧭 苏格拉底反问模式**。
+4. **第一性原理“奠基人溯源检索法”（解决静态词表未覆盖领域）**
    * 面对医疗、建筑、法律、编曲等任意冷门领域，**严禁生造互联网黑话**，强制执行四步溯源：`用户痛点 → 所属严谨学科 → 检索学科奠基人/经典教科书（如 Don Norman / Barbara Minto / Edward Tufte / Walter Murch） → 提取具名定律并展开为可执行约束`。
-3. **正交钥匙组合与“自我消融”防膨胀护栏**
+5. **正交钥匙组合与“自我消融”防膨胀护栏**
    * 支持跨维度组合最多 **3 把正交钥匙**（如：`PAS痛点文案` + `F型视觉动线` + `渐进式披露交互`），并内置自我消融检查，防止规则堆砌。
-4. **渐进式披露（Progressive Disclosure）5 大垂直分册词库**
+6. **渐进式披露（Progressive Disclosure）6 大垂直分册词库（39+ 具名钥匙）**
    * 遵循其自身倡导的“渐进式披露”理念，按需读取对应分册，极致节省上下文 Token：
      * 📘 [01 - UI/UX 交互、产品体验与 Vibe Coding](./references/01-ui-ux-and-vibe-coding.md)（渐进式披露、席克定律、瑞士网格、格式塔完形、乐观 UI、福格行为模型、防呆法、费茨拇指热区）
      * 🎬 [02 - 视觉排版、视频分镜、动效与 AI 绘画](./references/02-visual-video-and-animation.md)（F型动线、迪士尼12原则、剪影原则与形状语言、穆尔奇剪辑六法则、伦勃朗光与青橙色调、60-30-10法则）
      * 📊 [03 - 商业汇报 PPT、高转化文案、剧本与科普](./references/03-business-ppt-and-copywriting.md)（金字塔原理与MECE、SCQA叙事、PAS转化模型、黄金圈法则、救猫咪节拍表与Show Don't Tell、损失厌恶、费曼同构类比）
      * 🎲 [04 - 数据归因、概率预测、复杂博弈与 Prompt 优化](./references/04-data-probability-and-prompting.md)（消融实验、蒙特卡洛模拟、杜邦指标树、辛普森悖论、事前验尸与红队推演、纳什均衡与二阶思维、贝叶斯更新）
      * 🏗️ [05 - 软件工程架构、重构、高可靠系统与关卡设计](./references/05-software-architecture-and-engineering.md)（单一职责与关注点分离、有限状态机 FSM、契约式防御编程、幂等性与退避抖动、绞杀者模式、迪士尼视觉磁石与面包屑引导）
+     * 🧪 [06 - 提示词工程架构、多模态编译与量化评估体系](./references/06-prompt-engineering-and-evaluation.md)（三轨分流与LangGPT、证据隔离防越界、`{{变量}}`资产化、五层视觉导演编译、六维量化评分与靶向补丁迭代、少样本正反例锚定）
 
 ---
 
@@ -94,6 +102,10 @@ git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.claude/skills/plain
 
 无需安装任何代码！直接打开 [`adapters/standalone-system-prompt.md`](./adapters/standalone-system-prompt.md)，一键复制其中的代码块，粘贴到网页端 AI 的 **自定义指令（Custom Instructions）** 或 **智能体设定** 中即可。
 
+### 方式 4：Prompt Optimizer（`linshenkx/prompt-optimizer`）用户
+
+如果你正在使用开源的 Prompt Optimizer 桌面端/网页端，可直接导入本仓库提供的自定义模板 [`adapters/prompt-optimizer-template.json`](./adapters/prompt-optimizer-template.json)，为你的优化器装上 39+ 跨学科元知识钥匙内核！
+
 ---
 
 ## 🛠️ 本地词典检索与格式校验工具
@@ -101,13 +113,13 @@ git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.claude/skills/plain
 仓库内置了零依赖的 Python 脚本 [`scripts/validate_lexicon.py`](./scripts/validate_lexicon.py)，支持在命令行按大白话关键词秒查对应的专业词钥匙，或校验新增词条格式：
 
 ```bash
-# 校验全库 5 大分册所有元知识钥匙是否符合规范
+# 校验全库 6 大分册所有元知识钥匙是否符合规范
 python scripts/validate_lexicon.py --validate
 
 # 用大白话痛点关键词搜索对应的专业词钥匙
 python scripts/validate_lexicon.py --search "按钮"
 python scripts/validate_lexicon.py --search "PPT"
-python scripts/validate_lexicon.py --search "动画"
+python scripts/validate_lexicon.py --search "变量"
 ```
 
 ---
@@ -119,6 +131,11 @@ python scripts/validate_lexicon.py --search "动画"
 一个人的跨学科涉猎终有边界，但全网各行各业从业者的隐性知识汇聚在一起，就是一部无价的 **《AI 时代人类跨学科元知识开源大词典》**。
 
 无论你是**主治医师、建筑师、诉讼律师、编曲混音师、量化交易员、游戏策划还是厨师**，只要你知道你们行业里有哪些**“外行用大白话怎么也说不清，但内行一提某个专业词 AI 就秒懂”**的黄金术语，欢迎阅读 [贡献指南 (CONTRIBUTING.md)](./CONTRIBUTING.md) 或直接提交 Issue / PR！
+
+## 🙏 致谢与灵感参考
+
+- 核心方法论源自跨学科“元知识钥匙”理论与各领域经典著作（《金字塔原理》《生命的幻象》《思考，快与慢》《设计心理学》等）。
+- v2.0 工程外壳（三轨分流、`{{变量}}` 资产化、证据沙箱隔离与六维评估体系）吸收并借鉴了 [Prompt Optimizer](https://github.com/linshenkx/prompt-optimizer) 与 [LangGPT](https://github.com/langgptai/LangGPT) 的优秀开源设计思想。
 
 ## 📄 开源协议
 
