@@ -1,11 +1,11 @@
-# 🔑 plain-to-meta（元知识钥匙与“去头衔化实做”提示词破译器 v3.0）
+# 🔑 plain-to-meta（元知识钥匙与“去头衔化实做”提示词破译器 v3.1 · 轻快自适应版）
 
-> **双核破局：既破除“大白话自然表达派”迷思，也破除“你是XX专家”的假腔调迷思！帮你在 1 秒内逆向匹配 42+ 跨学科“元知识钥匙”，并通过「一、定向 · 二、借力 · 三、深挖」将专业方法直接做进结果里。**
+> **双核破局 + 消融瘦身：既破除“大白话自然表达派”迷思，也破除“你是XX专家”的假腔调迷思！帮你在 1 秒内逆向匹配 42+ 跨学科“元知识钥匙”，并通过「定向 · 借力 · 自适应深挖」以高性价比、零废话的方式将专业方法直接做进结果里（v3.1 输出端省流 ~40%）。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Agent Skills Standard](https://img.shields.io/badge/Standard-Agent%20Skills-blue.svg)](./SKILL.md)
 [![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-42%2B%20Verified-brightgreen.svg)](./references/)
-[![Version](https://img.shields.io/badge/Version-v3.0%20Orient--Borrow--Ground-purple.svg)](./SKILL.md)
+[![Version](https://img.shields.io/badge/Version-v3.1%20Adaptive--Slim-purple.svg)](./SKILL.md)
 
 [English README](./README_EN.md) | [残酷对比案例集 (7 组 Before vs. After)](./examples/before-after-showcase.md) | [贡献你的行业钥匙](./CONTRIBUTING.md)
 
@@ -57,10 +57,14 @@
 
 ---
 
-## ⚙️ 核心引擎架构（v3.0 六大核心设计）
+## ⚙️ 核心引擎架构（v3.1 六大核心设计 · 消融减脂 40%）
 
-1. **去头衔化“定向 · 借力 · 深挖”三步实做流（De-Roleplayed Execution Engine）**
-   * 彻底告别“你是某某专家”的空洞人设扮演，将所有专业词汇强制转化为**改变原方案具体步骤的实做动作（Action Diff）**，并在输出末尾强制建立**【未验证与待确认清单（Epistemic Honesty Audit Log）】**。
+1. **去头衔化“定向 · 借力 · 自适应深挖”实做流（Adaptive De-Roleplayed Engine）**
+   * 彻底告别“你是某某专家”的空洞人设扮演，将所有专业词汇强制转化为**改变原方案具体步骤的实做动作（Action Diff）**。
+   * **⚖️ 任务复杂度自适应门控（v3.1 新增，拒绝杀鸡用牛刀）**：
+     * **创作/UI/代码/视觉任务**：仅挂载「定向 + 借力实做（1~2 把钥匙） + 抗平庸红线」，自动跳过史料溯源与反证声明，保持提示词短小精悍、零注意力稀释；
+     * **调研/决策/商业汇报/审查任务**：自动全量开启「一手原始资料溯源 + 波普尔反证检验 + 未验证边界清单（Epistemic Honesty Audit Log）」。
+   * **⚡ 消除双重啰嗦税（Zero Double-Tax Output）**：编译模式下采用「3行破译头 + 可直接复制的生产级提示词 + 1句话验收标准」，砍掉代码块外的重复解释，减少约 **40% 的 Output Token 消耗与等待时间**。
 2. **三轨目标分流架构（Tri-Track Target Routing）**
    * **Track 1 [System 长效工作流轨]**：用于构建可复用的 Agent / Skill 规程（含定向边界、元知识钥匙簇、深挖证伪规程与内在思考准则 `Suggestions`）。
    * **Track 2 [User 单次实做指令轨]**：剥离冗余寒暄，直接输出「定向目标与遗漏排查 + 跨界方法实做改写 + 一手证据/反证/未验证清单 + `{{动态变量}}`」。
