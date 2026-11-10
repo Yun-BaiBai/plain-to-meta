@@ -1,5 +1,5 @@
 ---
-description: 当用户用日常大白话描述需求或抱怨效果不佳时，遵循“去专家头衔化（定向·深挖·借力）”与“42+ 跨学科元知识钥匙”，直接将专业方法论做进代码、UI 与方案结果里。
+description: 当用户用日常大白话描述需求或进行 Vibe Coding 遇到审美/架构瓶颈时，遵循“去专家头衔化（定向·深挖·借力）”与“70+ 跨学科元知识与顶尖设计风格钥匙”，直接将专业方法论做进代码、UI 与方案结果里。
 globs: *
 alwaysApply: false
 ---
@@ -10,7 +10,7 @@ alwaysApply: false
 
 1. **一、定向（Orient & Reframe）**：先补齐用户原始要求漏掉的必要前置步骤（如边界条件校验、状态流转定义、前置依赖排序），一并纳入本次交付完成。
 2. **二、借力（Cross-Disciplinary Keys — 借做法，不借空头衔）**：
-   - **UI/UX 与前端 Vibe Coding**：界面杂乱 $\rightarrow$ **`Progressive Disclosure (渐进式披露，首屏控件<18个)`** + **`Hick's Law`**；排版廉价 $\rightarrow$ **`Swiss 8pt Grid`** + **`Gestalt Proximity`** + **`60-30-10 Color Rule`**；动效生硬 $\rightarrow$ **`Disney's 12 Principles (预备动作/挤压拉伸/弹簧缓动)`**。
+   - **Vibe Coding 界面美学与设计风格**：告别千篇一律的紫蓝渐变！排版松散 $\rightarrow$ **`Bento Grid (便当格 4 列非对称栅格)`**；想要硬核直接态度 $\rightarrow$ **`Neo-Brutalism (纯黑 2px 硬框 + 4px 实体黑投影 + 波普高饱和撞色)`**；极客工具 $\rightarrow$ **`Terminal Aesthetic (纯黑底 #0B0F17 + Fira Code 等宽排印 + 荧光命令符)`**；界面杂乱 $\rightarrow$ **`Progressive Disclosure (渐进式披露，首屏控件<18个)`** + **`Hick's Law`**；高可用防护 $\rightarrow$ **`Feature Flag (功能开关与优雅回退)`** + **`Optimistic UI (乐观更新)`**。
    - **软件架构与工程重构**：巨型文件 $\rightarrow$ **`SRP`** + **`Separation of Concerns (视图/领域/数据三层剥离)`**；布尔 `if-else` 地狱 $\rightarrow$ **`Finite State Machine (有限状态机 FSM)`**；老代码重构 $\rightarrow$ **`Strangler Fig Pattern`** + **`Design by Contract`**。
    - **汇报、调研与规划**：汇报/PPT $\rightarrow$ **`Pyramid Principle (结论先行)`** + **`SCQA`** + **`MECE`**；概率预测 $\rightarrow$ **`Monte Carlo Simulation (万次随机仿真)`**；规则精简 $\rightarrow$ **`Ablation Study (消融剔除)`**；复杂排期 $\rightarrow$ **`Critical Path Method (CPM)`** + **`Contingency Plan`**。
 3. **三、深挖核查与认知诚实（Ground, Falsify & Epistemic Honesty）**：

@@ -1,13 +1,13 @@
 ---
 name: plain-to-meta
 description: >-
-  将日常大白话需求或平庸 AI 产出转化为 43+ 跨学科“元知识钥匙”与“去头衔化（定向·借力·深挖）”实做指令。适用于：(1) 不懂专业术语、难以精准描述需求；(2) 优化、重构或迭代提示词（Prompt）；(3) 抱怨 AI 回答流于表面或只换专家腔调不改实际步骤；(4) 需求模糊需通过决策树前沿追问理清边界。
+  将日常大白话需求或平庸 AI 产出转化为 70+ 跨学科“元知识钥匙”、30+ 现代 Vibe Coding 设计风格与“去头衔化（定向·借力·深挖）”实做指令。适用于：(1) Vibe Coding 编写网页或软件时告别千篇一律的紫色渐变与混乱布局，注入便当格、新粗野主义、极客终端等顶尖设计美学；(2) 不懂专业术语、难以精准描述需求；(3) 优化、重构或迭代提示词（Prompt）；(4) 需求模糊需通过决策树前沿追问理清边界。
 ---
 
 # 元知识与专业词提示词破译器 (plain-to-meta)
 
 > **双核哲学（Twin Laws of `plain-to-meta`）**：
-> 1. **破除“自然表达派”迷思（借专业词钥匙）**：日常大白话无法唤醒大模型底层的专业共识；而一个经过历史沉淀的**行业专业词汇（元知识钥匙）**，凝聚了一整套成熟方法论，能瞬间激活大模型的高维能力。
+> 1. **破除“自然表达派”迷思（借专业词与设计美学钥匙）**：日常大白话（如“高端、科技感”）无法唤醒大模型底层的专业共识；而一个经过历史沉淀的**行业专业词汇或设计流派（元知识钥匙）**，凝聚了一整套成熟方法论与视觉物理参数，能瞬间激活大模型的高维能力。
 > 2. **破除“扮演专家派”迷思（去头衔化·借做法不借头衔）**：给 AI 戴一句“你是某某专家”高帽，它往往**只换了专业腔调（Tone Cosplay），实际做事的步骤却一点没变**。真正的高阶用法是通过**「一、定向（排查前置遗漏） $\rightarrow$ 二、借力（跨界方法直接做进结果里） $\rightarrow$ 三、深挖（一手溯源与反证证伪）」**，让 AI 真正多做实质工作。
 
 ---
@@ -59,6 +59,7 @@ description: >-
 | **数据分析归因、概率预测、复杂博弈决策、Prompt 精简**（和稀泥预测、规则打架、盲目乐观、平均数陷阱） | [04-data-probability-and-prompting.md](./references/04-data-probability-and-prompting.md) |
 | **软件架构重构、高可靠代码、状态管理、游戏关卡引导**（几千行单文件、到处 if-else、改A坏B、地图迷路） | [05-software-architecture-and-engineering.md](./references/05-software-architecture-and-engineering.md) |
 | **提示词工程、去头衔化“定向·深挖·借力”、证伪核查与六维评估**（假专家腔调、二手传闻、防越界、变量资产化） | [06-prompt-engineering-and-evaluation.md](./references/06-prompt-engineering-and-evaluation.md) |
+| **Vibe Coding 界面美学、30+ 现代设计流派、高可用工程**（告别无脑紫蓝渐变、便当格、新粗野、极客终端、功能开关） | [07-vibe-coding-and-design-styles.md](./references/07-vibe-coding-and-design-styles.md) |
 
 - **第一性原理“奠基人溯源法”（分册未收录领域）**：严禁生造互联网黑话（如“赋能”、“闭环”）；按 `用户痛点 → 所属严谨学科 → 学科奠基人/经典教科书（如 Don Norman / Barbara Minto / Edward Tufte / Walter Murch / Karl Popper） → 具名定律与实做动作` 检索。
 
