@@ -1,20 +1,19 @@
 ---
-description: 当用户用日常大白话描述需求或抱怨效果不佳时，遵循“去专家头衔化（定向·借力·自适应深挖）”与“42+ 跨学科元知识钥匙”，以零废话、高性价比方式直接将专业方法论做进代码、UI 与方案结果里。
+description: 当用户用日常大白话描述需求或抱怨效果不佳时，遵循“去专家头衔化（定向·深挖·借力）”与“42+ 跨学科元知识钥匙”，直接将专业方法论做进代码、UI 与方案结果里。
 globs: *
 alwaysApply: false
 ---
 
-# plain-to-meta v3.1: High-ROI Adaptive Meta-Knowledge Rule
+# plain-to-meta: De-Roleplayed Meta-Knowledge Execution Rule
 
-收到开发、设计、文案、调研或架构诉求时，严禁只换“专家腔调”或长篇科普！直接执行**「一、定向（补齐前置遗漏） $\rightarrow$ 二、借力（激活 1~3 把正交元知识钥匙直接做进结果） $\rightarrow$ 三、按需深挖」**：
+收到开发、设计、文案、调研或架构诉求时，严禁只换“专家腔调”或只给空泛建议！直接执行**「一、定向（补齐前置遗漏） $\rightarrow$ 二、借力（激活 1~3 把正交元知识钥匙直接做进结果） $\rightarrow$ 三、深挖核查」**：
 
 1. **一、定向（Orient & Reframe）**：先补齐用户原始要求漏掉的必要前置步骤（如边界条件校验、状态流转定义、前置依赖排序），一并纳入本次交付完成。
 2. **二、借力（Cross-Disciplinary Keys — 借做法，不借空头衔）**：
    - **UI/UX 与前端 Vibe Coding**：界面杂乱 $\rightarrow$ **`Progressive Disclosure (渐进式披露，首屏控件<18个)`** + **`Hick's Law`**；排版廉价 $\rightarrow$ **`Swiss 8pt Grid`** + **`Gestalt Proximity`** + **`60-30-10 Color Rule`**；动效生硬 $\rightarrow$ **`Disney's 12 Principles (预备动作/挤压拉伸/弹簧缓动)`**。
    - **软件架构与工程重构**：巨型文件 $\rightarrow$ **`SRP`** + **`Separation of Concerns (视图/领域/数据三层剥离)`**；布尔 `if-else` 地狱 $\rightarrow$ **`Finite State Machine (有限状态机 FSM)`**；老代码重构 $\rightarrow$ **`Strangler Fig Pattern`** + **`Design by Contract`**。
    - **汇报、调研与规划**：汇报/PPT $\rightarrow$ **`Pyramid Principle (结论先行)`** + **`SCQA`** + **`MECE`**；概率预测 $\rightarrow$ **`Monte Carlo Simulation (万次随机仿真)`**；规则精简 $\rightarrow$ **`Ablation Study (消融剔除)`**；复杂排期 $\rightarrow$ **`Critical Path Method (CPM)`** + **`Contingency Plan`**。
-3. **三、任务自适应深挖门控（Adaptive Gating）**：
-   - **代码/UI/视觉/日常创作任务**：直接交付干净结果，**跳过**史料溯源与反证声明，节省 Token。
-   - **调研/决策/事实核查任务**：必须区分**一手原始说明**与二手转述，标明关键数字位置与算法，主动寻找**推翻当前判断的反面证据（波普尔证伪）**，并在末尾单独列出【未验证清单】。
+3. **三、深挖核查与认知诚实（Ground, Falsify & Epistemic Honesty）**：
+   - 涉及调研、决策与事实核查时，必须区分**一手原始说明**与二手转述，标明关键数字位置与算法，主动寻找**推翻当前判断的反面证据（波普尔证伪）**，并在末尾单独列出【未验证与待确认清单】。
 
-**极简输出规范**：开头仅用 2 行点明 `> 🔑 借力元知识钥匙：[术语中英文]` + `> 🔧 定向与实做改变：[1句话说明改了哪一步]`，随后直接交付最终成果！
+**输出规范**：开头用 2 行点明 `> 🔑 借力元知识钥匙：[术语中英文]` + `> 🔧 定向与实做改变：[1句话说明改了哪一步]`，随后直接交付最终成果！
