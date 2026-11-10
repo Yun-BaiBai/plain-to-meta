@@ -1,10 +1,10 @@
 # 🔑 plain-to-meta（元知识钥匙与“去头衔化实做”提示词破译器）
 
-> **双核破局：既破除“大白话自然表达派”迷思，也破除“你是XX专家”的假腔调迷思！帮你在 1 秒内逆向匹配 42+ 跨学科“元知识钥匙”，并通过「一、定向 · 二、借力 · 三、深挖」将专业方法直接做进结果里。**
+> **双核破局：既破除“大白话自然表达派”迷思，也破除“你是XX专家”的假腔调迷思！帮你在 1 秒内逆向匹配 43+ 跨学科“元知识钥匙”，并通过「一、定向 · 二、借力 · 三、深挖」将专业方法直接做进结果里。**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![Agent Skills Standard](https://img.shields.io/badge/Standard-Agent%20Skills-blue.svg)](./SKILL.md)
-[![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-42%2B%20Verified-brightgreen.svg)](./references/)
+[![Lexicon Keys](https://img.shields.io/badge/Meta--Knowledge%20Keys-43%2B%20Verified-brightgreen.svg)](./references/)
 [![Version](https://img.shields.io/badge/Version-v3.1%20Orient--Borrow--Ground-purple.svg)](./SKILL.md)
 
 [English README](./README_EN.md) | [残酷对比案例集 (7 组 Before vs. After)](./examples/before-after-showcase.md) | [贡献你的行业钥匙](./CONTRIBUTING.md)
@@ -52,6 +52,7 @@
 | *“AI 生成的数码产品宣传片动效太僵硬，像老式 PPT 平移”* | 匀速直线位移（Linear），毫无重量感与机械质感 | **迪士尼动画十二原则 (`Disney's 12 Principles`)** | 注入**反向预备动作、挤压与拉伸、非线性弹簧缓动与空间弧线**，瞬间具备工业大片弹性 |
 | *“让 AI 画 4 个角色同框，结果全是网红脸，只靠衣服颜色区分”* | 身高、五官、体态高度趋同，遮住颜色分不清谁是谁 | **角色剪影原则 (`Silhouette Rule`) + `形状语言`** | **涂成纯黑剪影也能一眼认出**；拉开圆/方/三角几何体型反差与破型标志物 |
 | *“Vibe Coding 写出的工具把几十个参数全铺在首页，太难用”* | 首屏堆砌 58 个控件，新用户打开直接认知超载 | **渐进式披露 (`Progressive Disclosure`) + `席克定律`** | 首屏仅保留 80% 主干功能（**<18 个元素**），高阶低频参数折叠进二级抽屉按需触发 |
+| *“AI 追问我一堆它自己能查到的代码事实，或者一次抛 10 个问题像审讯”* | 连珠炮式抛出一长串开放式问题，不给默认方案，回答极累 | **决策树前沿追问 (`Decision-Tree Frontier Grilling`) + `术语人话锚点`** | **查事实归 AI、拍板归用户**；每轮只问 **1~3 个当前前沿决策点**，且每题必附**专家推荐方案（回“是”即可一键采纳）** |
 
 👉 查看完整 7 组深度对比案例与 Prompt 原文：[examples/before-after-showcase.md](./examples/before-after-showcase.md)
 
@@ -107,7 +108,7 @@ git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.claude/skills/plain
 
 ### 方式 4：Prompt Optimizer（`linshenkx/prompt-optimizer`）用户
 
-如果你正在使用开源的 Prompt Optimizer 桌面端/网页端，可直接导入本仓库提供的自定义模板 [`adapters/prompt-optimizer-template.json`](./adapters/prompt-optimizer-template.json)，为你的优化器装上 42+ 跨学科元知识钥匙与“定向·借力·深挖”实做内核！
+如果你正在使用开源的 Prompt Optimizer 桌面端/网页端，可直接导入本仓库提供的自定义模板 [`adapters/prompt-optimizer-template.json`](./adapters/prompt-optimizer-template.json)，为你的优化器装上 43+ 跨学科元知识钥匙与“定向·借力·深挖”实做内核！
 
 ---
 
@@ -116,7 +117,7 @@ git clone https://github.com/Yun-BaiBai/plain-to-meta.git ~/.claude/skills/plain
 仓库内置了零依赖的 Python 脚本 [`scripts/validate_lexicon.py`](./scripts/validate_lexicon.py)，支持在命令行按大白话关键词秒查对应的专业词钥匙，或校验新增词条格式：
 
 ```bash
-# 校验全库 6 大分册所有 42 把元知识钥匙是否符合规范
+# 校验全库 6 大分册所有 43 把元知识钥匙是否符合规范
 python scripts/validate_lexicon.py --validate
 
 # 用大白话痛点关键词搜索对应的专业词钥匙
