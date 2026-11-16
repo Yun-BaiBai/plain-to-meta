@@ -34,19 +34,30 @@
 
 ## 🔥 直观效果对比（Before vs. After）
 
-### 对比一：Vibe Coding 界面美学跃迁（告别无脑紫蓝渐变，激活顶尖设计流派）
+以下为设计示意，展示同一任务采用具体方法后，布局、操作顺序或表达结构如何变化。
+
+### 对比一：用便当格重排产品首屏
+
 <p align="center">
-  <img src="./assets/vibe-coding-design-styles-comparison.svg" alt="Vibe Coding Design Styles Comparison Before vs After" width="100%" />
+  <img src="./assets/comparisons/01-vibe-coding-landing.zh.png" alt="Bento 网格界面前后对比，使用同一个短片工具、文案和样片。" width="100%" />
 </p>
 
-### 对比二：交互设计深度降噪（大白话堆砌 58 控件 vs 渐进式披露收纳）
+### 对比二：让常用操作先出现
+
 <p align="center">
-  <img src="./assets/ui-progressive-disclosure-comparison.svg" alt="Vibe Coding UI Progressive Disclosure Before vs After" width="100%" />
+  <img src="./assets/comparisons/02-progressive-disclosure.zh.png" alt="短片编辑器对比。左侧展开所有设置，右侧优先展示脚本、风格和生成预览。" width="100%" />
 </p>
 
-### 对比三：商业汇报与视觉角色跃迁（金字塔原理与剪影原则）
+### 对比三：用金字塔原理组织汇报
+
 <p align="center">
-  <img src="./assets/ppt-and-silhouette-comparison.svg" alt="PPT Pyramid Principle and Character Silhouette Rule Comparison" width="100%" />
+  <img src="./assets/comparisons/03-pyramid-principle.zh.png" alt="同一份季度复盘的开场页对比，右侧在第一页给出结论和预算诉求。" width="100%" />
+</p>
+
+### 对比四：用剪影区分角色
+
+<p align="center">
+  <img src="./assets/comparisons/04-character-silhouettes.zh.png" alt="同一支小队的剪影对比，右侧用方形、三角形、圆形和不对称体块区分职业。" width="100%" />
 </p>
 
 | 你的大白话吐槽 / 传统误区 | ❌ 默认平庸产出（大白话 / 假专家腔调） | 🔑 本 Skill 激活的“元知识钥匙” | ✅ 注入钥匙与“定向·借力·深挖”后的跃迁 |

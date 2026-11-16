@@ -30,14 +30,18 @@
 
 ## 🔥 Visual Showcases (Before vs. After)
 
-### Showcase 1: Vibe Coding Aesthetic Leap (Say Goodbye to Generic Purple Gradients)
+These mockups illustrate how specific layout and interaction constraints apply to the same task.
+
+### Showcase 1: One Brief, Two Landing Pages
+
 <p align="center">
-  <img src="./assets/vibe-coding-design-styles-comparison.svg" alt="Vibe Coding Design Styles Comparison Before vs After" width="100%" />
+  <img src="./assets/comparisons/01-vibe-coding-landing.en.png" alt="Two landing pages for the same video tool. An asymmetric grid gives the sample clip and Create action more prominence." width="100%" />
 </p>
 
-### Showcase 2: Interaction De-cluttering (58 Cluttered Controls vs Progressive Disclosure)
+### Showcase 2: Progressive Disclosure in a Video Editor
+
 <p align="center">
-  <img src="./assets/ui-progressive-disclosure-comparison.svg" alt="UI Progressive Disclosure Comparison" width="100%" />
+  <img src="./assets/comparisons/02-progressive-disclosure.en.png" alt="The same video editor with all settings visible, compared with a layout that keeps common actions upfront and moves advanced controls behind a menu." width="100%" />
 </p>
 
 ---
